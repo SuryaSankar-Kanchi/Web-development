@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event Page</title>
+        <style type="text/css">
+            a{
+                text-decoration:none;
+                color:blue;
+                padding-left:20px;
+            }
+            .preview{
+                float:right;
+                padding-right:40px;
+                padding-left:40px;
+                padding-top:10px;
+                padding-bottom:10px;
+                margin-right:40px;
+                border-radius:25px;
+                background-color:white;
+                color:orangered;
+                border-color:orangered;
+            }
+            h3{
+                margin-top:40px;
+                margin-left:20px;
+                opacity:50%;
+            }
+            .language{
+                float:right;
+            }
+            div{
+                opacity:50%;
+            }
+            .save{
+                padding-right:60px;
+                padding-left:60px;
+                padding-top:10px;
+                padding-bottom:10px;
+                margin-right:40px;
+                border-radius:25px;
+                background-color:orangered;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="dashboard.html"><b><- Back</b></a><button class="preview" onclick="window.location.href='preview.html'"><span><b>Preview Page</b></span></button>
+        <h3>Create Event</h3>
+        <div>
+            <form>
+                Event Name:<input type="text" maxlength="79"><span style="margin-left:500px">Choose Language:<select><option>Hindi</option><option>English</option></select></span><br/><br/>
+                Event Banner:<input type="text"><span style="margin-left:500px">Price(in INR):<select><option>Free</option><option>Paid</option></select></span><br/></br>
+                Short Description:<span style="margin-left:600px">Duration(in Minutes):<input type="text" ></span><br/><br/>
+                <textarea rows="5" cols="30"></textarea><span style="margin-left:480px">Choose Date:<input type="date" id="birthday" name="birthday"></span><br/><br/>
+                <span style="margin-left:750px">Event Link:<a href="https://meet.google.com/?hs=197&pli=1&authuser=0">Google meet link</a></span>
+            </form>
+        </div><br/><br/><br/>
+        <center><button class="save" onclick="alert1()"><b>Save</b></button></center>
+        <script type="text/javascript">
+            function alert1(){
+                alert("Details Saved Successfully");
+            }
+        </script>
+    </body>
+</html>
